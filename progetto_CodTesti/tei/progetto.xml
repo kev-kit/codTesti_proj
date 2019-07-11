@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+
+<teiCorpus version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+
+<teiHeader>
+    <!-- metadati documento intero -->
+    <fileDesc>
+
+        <titleStmt>
+
+            <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+            <title>Edizione Digitale Cartoline Storiche</title>   
+
+
+                <!-- TRASCRITTORE nome e cognome-->
+            <respStmt>                      
+
+                <resp>transcription by</resp>
+                <name xml:id="KV">Kevin Vanni</name>
+
+            </respStmt>
+
+                
+                <!-- ENTE DI APPARTENENZA -->
+            <respStmt>          
+
+                <resp>Ente di Appartenenza</resp>
+                <name type="comune" xml:id="SP">Comune della Spezia</name>
+
+            </respStmt>
+
+        </titleStmt>
+
+        <editionStmt>
+
+            <edition>Studenti di Storia Pubblica Digitale, Corso di Laurea Magistrale di Informatica Umanistica, Università di Pisa
+
+                <!-- COMPILAZIONE -->
+                <date>2019</date>
+
+            </edition>
+        
+            <respStmt>          
+
+                <resp>encoding by</resp>
+                <name ref="#KV"/>
+
+            </respStmt>
+
+
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+            <respStmt>               
+
+                <resp>Compilatore</resp>
+
+                <name xml:id="XY2">Tommaso Castagneto</name>
+                <name xml:id="XZ1">XZ</name>
+
+            </respStmt>
+
+            <respStmt>          
+
+                <resp>Responsabile scientifico</resp>
+
+                <name xml:id="GP">Giacomo Paolicchi</name>
+                <name xml:id="ES">Enrica Salvatori</name>
+
+            </respStmt>
+
+            <respStmt>          
+
+                <resp>Funzionario responsabile</resp>
+                <name xml:id="MR">Marzia Ratti</name>
+
+            </respStmt>
+
+        </editionStmt>
+
+            
+        <publicationStmt>               
+
+            <publisher>Unipi</publisher>
+            <pubPlace>Pisa</pubPlace>
+
+            <availability>
+
+                <p>Available under licence only</p>
+
+            </availability>
+
+            <date when="2019">2019</date>
+
+            <distributor>LabCD</distributor>
+
+            <address>
+
+                <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                <addrLine>Pisa</addrLine>
+
+            </address>
+
+        </publicationStmt>
+
+        <sourceDesc>
+
+                <msDesc>
+
+                    <msIdentifier>
+
+                        <!-- inserisco solo i nomi, e quindi riferimenti, delle cartoline, 
+                            ne specifico i dettagli nei sourceDesc successivi 
+                        -->
+
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno xml:id="cart008">7694_008_001/002</idno>
+                        <idno xml:id="cart013">7694_013_001/002</idno>
+
+                    </msIdentifier>
+
+                    <!-- DESCRIZIONE -->
+
+                    <msContents>
+                        <summary>Cartoline Artistiche</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+
+                </msDesc>
+
+                <listPerson>
+
+                    <person xml:id="GC">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Coliola</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">[maggiore]</occupation>
+                        <note></note>
+                    </person>
+
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <note></note>
+                    </person>
+
+                </listPerson>
+
+                <listPlace>
+
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                        <note>...</note>
+                    </place>
+
+                </listPlace>
+
+                <listOrg>           
+
+                    <org xml:id="SM">
+                        <orgName type="company">Sculture MASTROIANNI <placeName key="RO">Roma</placeName></orgName>
+                    </org>
+
+                    <org xml:id="AM">
+                        <orgName type="company">"Cromogliptica" A. Marzi 
+                            <placeName key="RO">Roma</placeName>
+                            <g type="logo" xml:id="AM_logo">AM</g>
+                        </orgName>
+                    </org>
+
+
+
+                </listOrg>
+
+            </sourceDesc>
+
+
+    </fileDesc>
+
+    <profileDesc>
+
+        <textClass>
+
+            <keywords scheme="">
+                <!-- soggettario -->
+                <!-- tipologia -->
+                <!-- descrizione -->
+
+                <term>Cartolina</term>
+                <term>Cartolina Artistica</term>
+                <term>Coppia di innamorati</term>
+            </keywords>
+
+        </textClass>
+
+        <langUsage>
+            <language ident="it-IT">italiano</language>
+        </langUsage>
+
+        </profileDesc>
+
+</teiHeader>
+
+    <!-- INIZIO CODIFICA CARTOLINE  -->
+
+<TEI>
+
+    <teiHeader> 
+    
+        <fileDesc>
+        
+            <titleStmt>
+
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Cartolina Storica: Giovanni Coliola, Oliva Turtura</title>   
+
+            </titleStmt>
+
+            <editionStmt>
+    
+                <edition>Studenti di Storia Pubblica Digitale, Corso di Laurea Magistrale di Informatica Umanistica, Università di Pisa
+    
+                    <!-- COMPILAZIONE -->
+                    <date>2019</date>
+    
+                </edition>
+            
+                <respStmt>          
+    
+                    <resp>encoding by</resp>
+                    <name ref="#KV"/>
+    
+                </respStmt>
+    
+            </editionStmt>
+
+            <publicationStmt>
+
+                <publisher>Unipi</publisher>
+
+                <pubPlace>Pisa</pubPlace>
+
+                <availability>
+
+                    <p>Available under licence only</p>
+
+                </availability>
+
+                <date when="2019">2019</date>
+
+                <distributor>LabCD</distributor>
+
+                <address>
+
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+
+                    <addrLine>Pisa</addrLine>
+
+                </address>
+
+            </publicationStmt>
+
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+            <notesStmt>         
+                <note xml:id="GC_icon" type="immagine" source="extra/GC_icon.png" />
+            </notesStmt>
+
+
+            <sourceDesc>        
+
+                <bibl>
+
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    
+                    <title>Idillio</title>
+                    <author>D. Mastroiannni</author>
+
+                    <!-- PRODUZIONE Chi ha prodotto / pubblicato la cartolina. Se non presente togliere il tag  -->
+                    <publisher>Sculture Mastroianni Roma - Cromogliptica A. Marzi Roma</publisher>
+
+                    <!-- LUOGO -->
+                    <pubPlace>Roma</pubPlace>
+
+                </bibl>
+
+                <msDesc>
+
+                    <msIdentifier>
+
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno corresp="#cart008">008</idno>
+
+                    </msIdentifier>
+
+
+                    <!-- Informazioni sul contenuto della cartolina -->
+
+                    <!-- DESCRIZIONE -->
+
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+
+                                <support>
+                                    <objectType>Cartolina</objectType>
+
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                </support>
+
+                                <!-- CONSERVAZIONE 
+                                buono = non occorrono interventi di restauro;
+                                discreto = perfettamente leggibile in tutte le componenti ma con rischi di deterioramento per usura;
+                                mediocre = perfettamente leggibile, ma mancano alcune sue parti;
+                                cattivo = intaccato da parassiti o deteriorato da cattivi interventi passati o mancanti di parti rilevanti, necessita di restauro-->
+
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+
+                </msDesc>
+                
+
+                <!-- NOMI -->
+
+                <listPerson>
+
+                    <person corresp="#GC"/>
+
+                    <person corresp="#OT"/>
+
+                </listPerson>
+
+                <listPlace>
+
+                    <place corresp="#RV"/>
+
+                </listPlace>
+
+                <listOrg>           
+
+                    <org corresp="#SM"/>
+
+                    <org corresp="#AM"/>
+
+                </listOrg>
+
+            </sourceDesc>
+
+        </fileDesc>
+
+        <profileDesc>       
+
+            <correspDesc>
+
+                <correspAction type="sent">
+                    <persName ref="#GC"/>
+                    <placeName>...</placeName>
+                    <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                    <date type="writing" when="1916-12-08">1916/12/08</date>
+                </correspAction>
+
+                <correspAction type="received">
+                    <persName ref="#OT"/>
+                    <placeName ref="#RV"/>
+                </correspAction>
+
+                <correspContext>
+                    <p>
+                        <!-- previous -->
+                        <!-- forward -->
+                    </p>
+                </correspContext>
+
+            </correspDesc>
+
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+
+        </profileDesc>
+    
+    </teiHeader>
+
+    <facsimile>
+
+        <!-- FRONTE -->
+
+        <surface type="fronte" xml:id="cart_7694-008F" ulx="0" uly="0" lrx="1048" lry="1607">
+
+            <graphic xml:id="cart8F" url='img/7694-008F.jpg' width='1048px' height='1607px' />
+            <zone xml:id="cart8F_aut" ulx="3" uly="1480" lrx="168" lry="1571" />    <!-- firma autore -->
+
+        </surface>        
+
+        <!-- retro -->
+
+        <surface type="retro" xml:id="cart_7694-008R" ulx="0" uly="0" lrx="1050" lry="1609">
+
+            <graphic xml:id="cart8R" url='img/7694-008R.jpg' width='1050px' height='1609px' />
+            <zone xml:id="cart8R_data" ulx="54" uly="2" lrx="257" lry="119" /> <!-- data -->
+            <zone xml:id="cart8R_open" ulx="381" uly="28" lrx="708" lry="114" /> <!-- opener saluto -->
+
+            <zone xml:id="cart8R_index" ulx="925" uly="62" lrx="981" lry="130" /> <!-- indice lettera -->
+
+            <zone xml:id="cart8R_rg1" ulx="71" uly="124" lrx="1039" lry="205" /> <!-- rigo 1 -->
+            <zone xml:id="cart8R_rg2" ulx="23" uly="206" lrx="970" lry="300" /> <!-- rigo 2 -->
+            <zone xml:id="cart8R_rg3" ulx="33" uly="289" lrx="979" lry="389" /> <!-- rigo 3 -->
+            <zone xml:id="cart8R_rg4" ulx="29" uly="395" lrx="1040" lry="492" /> <!-- rigo 4 -->
+            <zone xml:id="cart8R_rg5" ulx="11" uly="474" lrx="1037" lry="578" /> <!-- rigo 5 -->
+            <zone xml:id="cart8R_rg6" ulx="16" uly="562" lrx="1021" lry="660" /> <!-- rigo 6 -->
+            <zone xml:id="cart8R_rg7" ulx="43" uly="647" lrx="1030" lry="705" /> <!-- rigo 7 -->
+            <zone xml:id="cart8R_rg8" ulx="22" uly="732" lrx="1017" lry="788" /> <!-- rigo 8 -->
+            <zone xml:id="cart8R_rg9" ulx="19" uly="803" lrx="1032" lry="900" /> <!-- rigo 9 -->
+            <zone xml:id="cart8R_rg10" ulx="18" uly="889" lrx="1011" lry="981" /> <!-- rigo 10 -->
+            <zone xml:id="cart8R_rg11" ulx="18" uly="986" lrx="1044" lry="1083" /> <!-- rigo 11 -->
+            <zone xml:id="cart8R_rg12" ulx="23" uly="1074" lrx="1006" lry="1160" /> <!-- rigo 12 -->
+            <zone xml:id="cart8R_rg13" ulx="26" uly="1145" lrx="1026" lry="1229" /> <!-- rigo 13 -->
+            <zone xml:id="cart8R_rg14" ulx="42" uly="1228" lrx="1034" lry="1318" /> <!-- rigo 14 -->
+            <zone xml:id="cart8R_rg15" ulx="41" uly="1310" lrx="1022" lry="1417" /> <!-- rigo 15 -->
+            <zone xml:id="cart8R_rg16" ulx="44" uly="1388" lrx="1032" lry="1483" /> <!-- rigo 16 -->
+            <zone xml:id="cart8R_rg17" ulx="31" uly="1449" lrx="1047" lry="1561" /> <!-- rigo 17 -->
+            <zone xml:id="cart8R_close" ulx="48" uly="1543" lrx="1031" lry="1607" /> <!-- chiusura -->
+
+            <!-- di stampa -->
+            <zone xml:id="cart8R_stamp1" ulx="37" uly="10" lrx="483" lry="49" /> <!-- Mastroianni -->
+            <zone xml:id="cart8R_stamp2" ulx="597" uly="7" lrx="1010" lry="44" /> <!-- Marzi -->
+            <zone xml:id="cart8R_stamp3" ulx="151" uly="51" lrx="369" lry="79" /> <!-- ed. propria -->
+            <zone xml:id="cart8R_stamp4" ulx="772" uly="68" lrx="824" lry="111" /> <!-- logo AM -->
+            <zone xml:id="cart8R_stamp5" ulx="232" uly="91" lrx="302" lry="124" /> <!-- numero 7 -->
+            <zone xml:id="cart8R_stamp6" ulx="485" uly="107" lrx="563" lry="135" /> <!-- nome opera -->
+            <zone xml:id="cart8R_stamp7" ulx="486" uly="159" lrx="559" lry="192" /> <!-- nome opera FR -->
+            <zone xml:id="cart8R_stamp8" ulx="45" uly="679" lrx="996" lry="716" /> <!-- riproduzione interdetta stampato in italia -->
+
+            <!-- eventuali particolari -->
+
+        </surface>
+
+    </facsimile>
+
+    <text type="cartolina" xml:id="text_008">
+
+        <!-- TRASCRIZIONE -->
+
+        <body>
+
+            <div facs="#cart_7694-008F" type="fronte">
+
+                <figure>
+
+                    <graphic facs="#cart8F" url="img/694-008F.jpg" width='1048px' height='1607px' />
+
+                    <figDesc>
+
+                        <desc>
+                        Nell'immagine a colori sono raffigurate, in primo piano, un uomo e una donna mano nella mano. La donna siede su una panchina di stile classico, mentre l'uomo, genoflesso al suolo, le avvicina il volto.
+                        In secondo piano, si nota un albero, probabilmente un cipresso, ed altra vegetazione, che circonda la coppia. Sullo sfondo, una citta' dell'eta' classica si affaccia su un paesaggio probabilmente raffigurante il mare o un lago.
+                        In basso a sinistra, si intravede parte della firma dell'autore: <persName facs="#cart8F_aut">D. Mastroianni</persName>.   
+                        </desc>
+
+                    </figDesc>
+
+                    <head>Idillio - D.Mastroianni</head>
+
+                </figure>
+
+            </div>
+
+            <div facs="#cart_7694-008R" type="retro">
+
+                <div type="message">
+
+                    <p>
+                        <l><lb facs="#cart8R_data"/><date>08/12/1916</date></l>
+                        <l><lb facs="#cart8R_index"/><idno corresp="#cart008">8</idno></l>
+                        <l><lb facs="#cart8R_open"/><persName ref="#OT">Oliva</persName> cara,</l>      
+                    </p>
+                    <p>
+                        <l><lb facs="#cart8R_rg1"/>Quando mi sento amato da te, non</l>
+                        <l><lb facs="#cart8R_rg2"/>temo pi&#249; nulla, nulla, nulla.</l>
+                    </p>
+                    <p>
+                        <l><lb facs="#cart8R_rg3"/>Biasimo quel cuore umano che</l>
+                        <l><lb facs="#cart8R_rg4"/>non &#232; ispirato al vero, puro amo<pc force="strong">=</pc></l>
+                        <l><lb facs="#cart8R_rg5" break="no"/>re, a quell&apos;amore nostro, che &#232; ogget<pc force="strong">=</pc></l>
+                        <l><lb facs="#cart8R_rg6" break="no"/>to della nostra vita e che ci eleva</l>
+                        <l><lb facs="#cart8R_rg7"/>sino al sacrificio, sino al pi&#249;</l>
+                        <l><lb facs="#cart8R_rg8"/>nobile dei sentimenti: <emph>l&apos;altruismo</emph>.</l> 
+                    </p>
+                    <p>
+                        <l><lb facs="#cart8R_rg9"/>Si <persName ref="#OT">Oliva</persName> mia, credilo fortemente, sap<pc force="strong">=</pc></l>
+                        <l><lb facs="#cart8R_rg10" break="no"/>pilo, ripetilo a te stessa le mille e le</l>
+                        <l><lb facs="#cart8R_rg11"/>mille volte; il tuo <persName ref="#GC">Giovannino</persName>, quel</l>
+                        <l><lb facs="#cart8R_rg12"/><persName ref="#GC">Giovannino</persName> lontano, fra i dolori</l>
+                        <l><lb facs="#cart8R_rg13"/>pi&#249; elevati, pi&#249; crudeli, non ha che</l>
+                        <l><lb facs="#cart8R_rg14"/>un solo desiderio, il tuo, il tuo nobile</l>
+                        <l><lb facs="#cart8R_rg15"/>amore e quando gli uomini saran<pc force="strong">=</pc></l>
+                        <l><lb facs="#cart8R_rg16" break="no"/>no rinsaviti, cogli l&apos;amore ancora nel</l>
+                        <l><lb facs="#cart8R_rg17"/>la fase tranquilla della vita, in eterno.</l>
+                    </p>
+                    <p>
+                        <l><lb facs="#cart8R_close"/>
+                            <persName ref="#OT">Oliva</persName>, <persName ref="#OT">Oliva</persName> amami tanto. 
+                            <persName ref="#GC">Giovannino</persName>
+                        </l>
+                    </p>
+                
+                </div>
+
+                <div type="stamp_string">
+
+                    <p>
+
+                        <!-- stamps -->
+
+                        <stamp type="stamp_strings"> 
+
+                            <orgName facs="#cart8R_stamp1" ref="#SM">Sculture MASTROIANNI Roma</orgName>
+                            <orgName facs="#cart8R_stamp2" ref="#AM">&quot;Cromogliptica&quot; A. Marzi Roma</orgName>
+
+                            <mentioned facs="#cart8R_stamp3">Edizione Propria</mentioned>
+                            <g facs="#cart8R_stamp4" ref="#AM_logo">AM</g>
+                            <index facs="#cart8R_stamp5" indexName="seriresID">
+                                <term>N. 7</term>
+                            </index>
+                            <mentioned facs="#cart8R_stamp6">Idillio</mentioned>
+                            <foreign facs="#cart8R_stamp7" xml:lang="FR">Idylle</foreign>
+                            <mentioned facs="#cart8R_stamp8">Riproduzione interdetta Stampato in Italia</mentioned>
+
+                        </stamp>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </body>
+
+    </text>
+
+</TEI>
+
+<TEI>
+
+    <teiHeader> <!-- da template -->
+
+        <fileDesc>
+        
+            <titleStmt>
+
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Cartolina Storica: Giovanni Coliola, Oliva Turtura</title>   
+
+            </titleStmt>
+
+            <editionStmt>
+    
+                <edition>Studenti di Storia Pubblica Digitale, Corso di Laurea Magistrale di Informatica Umanistica, Università di Pisa
+    
+                    <!-- COMPILAZIONE -->
+                    <date>2019</date>
+    
+                </edition>
+            
+                <respStmt>          
+    
+                    <resp>encoding by</resp>
+                    <name ref="#KV"/>
+    
+                </respStmt>
+    
+            </editionStmt>
+
+            <publicationStmt>
+
+                <publisher>Unipi</publisher>
+
+                <pubPlace>Pisa</pubPlace>
+
+                <availability>
+
+                    <p>Available under licence only</p>
+
+                </availability>
+
+                <date when="2019">2019</date>
+
+                <distributor>LabCD</distributor>
+
+                <address>
+
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+
+                    <addrLine>Pisa</addrLine>
+
+                </address>
+
+            </publicationStmt>
+
+            
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+            <notesStmt>         
+                <note xml:id="OT_icon" type="immagine" source="extra/OT_icon.png" />
+                <note xml:id="link_Campi" type="link" source="https://archive.org/stream/mostrapostumadel00camp/mostrapostumadel00camp_djvu.txt"/>
+            </notesStmt>
+
+
+            <sourceDesc>        
+
+                <bibl>
+
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    
+                    <title>Fiori</title>
+                    <author>G. Campi</author>
+
+                </bibl>
+
+                <msDesc>
+
+                    <msIdentifier>
+
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno corresp="#cart013">013</idno>
+
+                    </msIdentifier>
+
+
+                    <!-- Informazioni sul contenuto della cartolina -->
+
+                    <!-- DESCRIZIONE -->
+
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+
+                                <support>
+                                    
+                                    <objectType>Cartolina</objectType>
+
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+
+                                </support>
+
+                                <!-- CONSERVAZIONE 
+                                buono = non occorrono interventi di restauro;
+                                discreto = perfettamente leggibile in tutte le componenti ma con rischi di deterioramento per usura;
+                                mediocre = perfettamente leggibile, ma mancano alcune sue parti;
+                                cattivo = intaccato da parassiti o deteriorato da cattivi interventi passati o mancanti di parti rilevanti, necessita di restauro-->
+
+                                <condition>Buono</condition>
+                            
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+
+                </msDesc>
+                
+
+                <!-- NOMI -->
+
+                <listPerson>
+
+                    <person corresp="#GC"/>
+
+                    <person corresp="#OT"/>
+
+                </listPerson>
+
+                <listPlace>
+
+                    <place corresp="#RV"/>
+
+                </listPlace>
+
+            </sourceDesc>
+
+        </fileDesc>
+
+        <encodingDesc>
+        
+            <charDecl>
+                <glyph xml:id="unclear_F">
+                    <mapping type="PUA">&#x192;&#x2F8;</mapping>
+                    <note>Il glifo riportato non e' chiaramente identificabile. Potrebbe trattarsi di un errore di scrittura come di altro</note>
+                </glyph>
+            </charDecl>
+        
+        </encodingDesc>
+
+        <profileDesc>
+
+            <correspDesc>
+
+                <correspAction type="sent">
+                    <persName ref="#OT"/>
+                    <placeName ref="#RV"/>
+                    <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                    <date type="writing" when="1916-10-09">1916/10/09</date>
+                </correspAction>
+
+                <correspAction type="received">
+                    <persName ref="#GC"/>
+                    <placeName>...</placeName>
+                </correspAction>
+
+                <correspContext>
+                    <p>
+                        <!-- previous -->
+                        <!-- forward -->
+                    </p>
+                </correspContext>
+
+            </correspDesc>
+
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+
+        </profileDesc>
+
+    </teiHeader>
+
+    <facsimile>
+
+        <!-- FRONTE -->
+        <surface type="fronte" xml:id="cart_7694-013F" ulx="0" uly="0" lrx="1077" lry="1655">
+
+            <graphic xml:id="cart13F" url='img/7694-013F.jpg' width='1077px' height='1655px' />
+            <zone xml:id="cart13F_img" ulx="92" uly="64" lrx="1025" lry="1402" />    <!-- opera -->
+            <zone xml:id="cart13F_aut" ulx="942" uly="1327" lrx="1034" lry="1367" /> <!-- firma autore -->
+
+            <zone xml:id="cart13F_stamp" ulx="421" uly="1421" lrx="716" lry="1462" /> <!-- di stampa -->
+
+            <!-- scrittura Oliva -->
+            <zone xml:id="cart13F_rg1" ulx="44" uly="1392" lrx="1073" lry="1502" />  <!-- rigo 1 -->
+            <zone xml:id="cart13F_rg2" ulx="92" uly="1478" lrx="1068" lry="1570" />  <!-- rigo 2 -->
+            <zone xml:id="cart13F_rg3" ulx="57" uly="1569" lrx="1004" lry="1653" />  <!-- rigo 3 -->
+
+        </surface>
+
+        <!-- RETRO -->
+
+        <surface type="retro" xml:id="cart_7694-013R" ulx="0" uly="0" lrx="1081" lry="1655">
+
+            <graphic xml:id="cart13R" url='img/7694-013R.jpg' width='1081px' height='1665px' />
+
+            <zone xml:id="cart13R_index" ulx="64" uly="19" lrx="163" lry="88" /> <!-- indice lettera -->
+
+            <zone xml:id="cart13R_open" ulx="273" uly="61" lrx="1060" lry="149" />    <!-- opener saluti -->
+            <zone xml:id="cart13R_data" ulx="586" uly="4" lrx="1077" lry="56" /> <!-- luogo e data -->
+
+            <zone xml:id="cart13R_rg1" ulx="55" uly="111" lrx="1072" lry="215" />    <!-- rigo 1 -->
+            <zone xml:id="cart13R_rg2" ulx="72" uly="180" lrx="903" lry="261" />     <!-- rigo 2 -->
+            <zone xml:id="cart13R_rg3" ulx="72" uly="268" lrx="1051" lry="332" />    <!-- rigo 3 -->
+            <zone xml:id="cart13R_rg4" ulx="48" uly="335" lrx="1006" lry="388" />    <!-- rigo 4 -->
+            <zone xml:id="cart13R_rg5" ulx="61" uly="399" lrx="1063" lry="463" />    <!-- rigo 5 -->
+            <zone xml:id="cart13R_rg6" ulx="51" uly="467" lrx="1077" lry="538" />    <!-- rigo 6 -->
+            <zone xml:id="cart13R_rg7" ulx="43" uly="530" lrx="1029" lry="581" />    <!-- rigo 7 -->
+            <zone xml:id="cart13R_rg8" points = '50,575 49,630 969,651 970,694 1077,694 1077,585' />  <!--rigo 8 -->
+            <zone xml:id="cart13R_rg9" ulx="49" uly="655" lrx="752" lry="708" />        <!-- rigo 9 -->
+            <zone xml:id="cart13R_rg10" ulx="45" uly="713" lrx="1017" lry="780" />      <!-- rigo 10 -->
+            <zone xml:id="cart13R_rg11" ulx="52" uly="787" lrx="1070" lry="861" />      <!-- rigo 11 -->
+            <zone xml:id="cart13R_rg12" ulx="46" uly="840" lrx="1030" lry="895" />      <!-- rigo 12 -->
+            <zone xml:id="cart13R_rg13" ulx="62" uly="901" lrx="1062" lry="958" />      <!-- rigo 13 -->
+            <zone xml:id="cart13R_rg14" ulx="55" uly="970" lrx="990" lry="1003" />      <!-- rigo 14 -->
+            <zone xml:id="cart13R_rg15" ulx="65" uly="1011" lrx="1041" lry="1059" />    <!-- rigo 15 -->
+            <zone xml:id="cart13R_rg16" points = '45,1082 46,1122 1018,1126 1063,1160 1079,1161 1080,1067' /> <!-- rigo 16 -->
+            <zone xml:id="cart13R_rg17" points = '56,1138 55,1192 994,1204 1080,1236 1080,1168 929,1120' />   <!-- rigo 17 -->
+            <zone xml:id="cart13R_rg18" ulx="57" uly="1199" lrx="945" lry="1253" />     <!-- rigo 18 -->
+            <zone xml:id="cart13R_rg19" ulx="39" uly="1265" lrx="1024" lry="1320" />    <!-- rigo 19 -->
+            <zone xml:id="cart13R_rg20" ulx="71" uly="1338" lrx="1019" lry="1396" />    <!-- rigo 20 -->
+            <zone xml:id="cart13R_rg21" points = '67,1414 64,1463 977,1456 1047,1506 1079,1506 1077,1372' />   <!-- rigo 21 -->
+            <zone xml:id="cart13R_rg22" points = '51,1471 45,1529 1024,1535 1069,1567 1079,1548 1073,1508 1035,1502 985,1465' /> <!-- rigo 22 -->
+            <zone xml:id="cart13R_rg23" ulx="42" uly="1540" lrx="1023" lry="1580" />    <!-- rigo 23 -->
+
+            <!-- chiusura -->
+            <zone xml:id="cart13R_rg24" points = '35,1581 35,1622 1039,1630 1067,1651 1080,1652 1080,1584' /> <!-- riga 24 --> 
+            <zone xml:id="cart13R_rg25" ulx="77" uly="1625" lrx="721" lry="1664" />                             <!-- riga 25 -->       
+
+            <!-- stampa -->
+            <zone xml:id="cart13R_stamp" ulx="976" uly="1493" lrx="1010" lry="1557" /> <!-- numero serie -->
+
+            <!-- eventuali particolari -->
+            <zone xml:id="unc01" ulx="281" uly="602" lrx="299" lry="626" />    <!-- unclear or damage 01 -->
+            <zone xml:id="unc02" ulx="45" uly="837" lrx="83" lry="887" />      <!-- unclear or damage 02 -->
+            <zone xml:id="unc03" ulx="43" uly="1086" lrx="79" lry="1116" />    <!-- unclear or damage 03 -->
+            <zone xml:id="unc04" ulx="373" uly="1254" lrx="425" lry="1321" />  <!-- unclear or damage 04 -->
+            <zone xml:id="unc05" ulx="36" uly="1466" lrx="103" lry="1527" />   <!-- unclear or damage 05 -->
+
+
+        </surface>
+
+    </facsimile>
+
+    <text type="cartolina" xml:id="text_013">    <!-- oppure solo 13 -->
+
+        <!-- TRASCRIZIONE -->
+
+        <body>
+
+            <div facs="#cart_7694-013F" type="fronte">
+
+                <figure>
+
+                    <graphic url="img/7694-013F.jpg" width='1077px' height='1655px'/>
+
+                    <figDesc>
+                        <desc facs="#cart13F_img">
+                        Nella parte superiore della cartolina &#232; riportata un opera in bianco e nero, nella quale &#232; raffigurata una donna, che indossa una grande cappello, mentre tiene in mano un mazzo di fiori.
+                        Sullo sfondo dell'immagine si nota un boschetto. In basso a destra &#232; riportata la firma dell'autore: <persName facs="#cart13F_aut">G.Campi</persName>.
+                        Nella parte inferiore &#232; riportata, a caratteri di stampa, il nome dell'opera &quot;Fiori&quot; seguito, tra parentesi, dal nome dell'autore.
+                        Subito sotto, nello spazio vuoto, la mittente ha riportato qualche parole di saluto.
+                        </desc>
+                        
+                        <stamp>
+                            <mentioned facs="#cart13F_stamp">
+                                &quot;Fiori&quot; <name>(G. Campi)</name>
+                            </mentioned>
+                            <note>
+                                &#232; presumibile che l'autore sia il cav. Giacomo Campi come dimostra un elenco delle sue opere dove figura il nome dell'opera rappresentata <!-- link attribuzione opera: https://archive.org/stream/mostrapostumadel00camp/mostrapostumadel00camp_djvu.txt -->
+                            </note>
+                        </stamp>    
+                        
+                        <floatingText>
+                            <body>
+                                <p>
+                                    <l><lb facs="#cart13F_rg1"/>Rivedrei con pi&#249; grazia te in persona<pc>...</pc></l>
+                                    <l><lb facs="#cart13F_rg2"/><persName ref="#GC">Giovannino</persName> amami amami</l>
+                                    <l><lb facs="#cart13F_rg3"/>Scrivi<pc>...</pc><hi rend="underline"><persName ref="#OT">Oliva</persName></hi></l>
+                                </p>
+                            </body>
+                        </floatingText>
+
+                    </figDesc>
+
+                    <head>Fiori - G.Campi</head>
+
+                </figure>
+
+            </div>
+
+            <div facs="#cart_7694-013R" type="retro">
+
+                <div type="message">
+
+                    <p>
+                        <l><lb facs="#cart13R_index"/><idno corresp="#cart013">13</idno></l>
+                        <l><lb facs="#cart13R_data"/><placeName ref="#RV">Ravenna </placeName><date when="09/10/1916">9 Ottobre 916</date></l>
+                        <l><lb facs="#cart13R_open"/><persName ref="#GC">Giovannino</persName> mio<pc>...</pc></l>      
+                    </p> 
+                    <p>
+                        <l><lb facs="#cart13R_rg1"/>ti amo<pc type="exclamatory">!</pc> ti amo pazzamente<pc>...</pc></l>
+                        <l><lb facs="#cart13R_rg2"/><persName ref="#GC">Giovannino</persName> <persName ref="#GC"> Giovannino</persName></l>
+                        <l><lb facs="#cart13R_rg3"/><persName ref="#GC">Giovannino</persName><pc>...</pc> lascia che</l>
+                        <l><lb facs="#cart13R_rg4"/>io ti chiami ardentemente cos&#236;</l>
+                        <l><lb facs="#cart13R_rg5"/>mille volte, lascia che io metta nel</l>
+                        <l><lb facs="#cart13R_rg6"/>tuo nome tutto l&apos;impeto di passione</l>
+                        <l><lb facs="#cart13R_rg7"/>che irrompe dal cuor mio<pc>...</pc></l>
+                        <l><lb facs="#cart13R_rg8"/>non so d<damage facs="#unc01" agent="ink blot" degree="low"><c>i</c></damage>rti che cos&#236; poich&#232; avrei <hi rend="underline">troppo</hi></l>
+                        <l><lb facs="#cart13R_rg9"/>da dirti<pc>...</pc></l>
+                    </p>
+                    <p>
+                        <l><lb facs="#cart13R_rg10"/>Perch&#232; non puoi pi&#249; scrivermi a</l>
+                        <l><lb facs="#cart13R_rg11"/>lungo<pc type="interrogative">?</pc> Fallo sempre quando lo puoi,</l>
+                        <l><lb facs="#cart13R_rg12"/><unclear facs="#unc02" reason="ink blot">tu</unclear> non saprai mai quanto bene</l>
+                        <l><lb facs="#cart13R_rg13"/>possono farmi le tue dolci parole</l>
+                        <l><lb facs="#cart13R_rg14"/>anch&apos;io lo far&#242; sempre forse.</l>
+                    </p>
+                    <p>
+                        <l><lb facs="#cart13R_rg15"/>Stasera ho bisogno di sentirmi sicura</l>
+                        <l><lb facs="#cart13R_rg16"/><unclear facs="#unc03" reason="ink blot">se</unclear> te sei ispirato, ho bisogno immenso</l>
+                        <l><lb facs="#cart13R_rg17"/>di te, del tuo aiuto<pc>...</pc> <persName ref="#GC">Giovannino</persName></l>
+                        <l><lb facs="#cart13R_rg18"/><persName ref="#GC">Giovannino</persName> mi vuoi</l>
+                        <l><lb facs="#cart13R_rg19"/>bene davvero<unclear facs="#unc04" reason="ink blot"><pc type="interrogative">?</pc></unclear> tu non puoi ancora</l>
+                        <l><lb facs="#cart13R_rg20"/>sapere quanto ti ami e desideri</l>
+                        <l><lb facs="#cart13R_rg21"/>la tua Oliva<pc>...</pc> Mi penserai a lungo<pc type="interrogative">?</pc></l>
+                    </p>
+                    <p>
+                        <l><lb facs="#cart13R_rg22"/><unclear facs="#unc05" reason="illegible"><g ref="#unclear_F"/></unclear><persName ref="#GC">Giovannino</persName> scrivimi e parlami tanto</l>
+                        <l><lb facs="#cart13R_rg23"/>di te, accontentami. Aspetto ancora</l> 
+                        <l><lb facs="#cart13R_rg24"/>la famosa fotografia e puoi immaginare</l>
+                        <l><lb facs="#cart13R_rg25"/>con che ansia<pc>...</pc></l>
+                    </p>
+
+                </div>
+
+                <div type="stamp_string">
+
+                    <p>
+
+                        <!-- stamps -->
+
+                        <stamp type="stamp_strings"> 
+
+                            <index facs="#cart13R_stamp" indexName="seriresID">
+                                <term>0170</term>
+                            </index>
+                        
+                        </stamp>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </body>
+
+    </text>
+
+</TEI>
+
+</teiCorpus>

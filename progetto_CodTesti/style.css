@@ -1,0 +1,270 @@
+        *{ padding: 0; margin: 0; }
+
+        /*------ HEADER ------*/
+
+        header{
+            background-color: rgb(190, 190, 190);
+            width: 100%;
+            height: 150px;
+            padding-top: 20px;
+            padding-bottom: 20px;            
+        }
+
+        header div{ position: relative; float: left;}
+
+        .wrap_h1{
+            /* background-color: red; */
+            margin-top: -20px;
+            width: 20%;
+            height: 100%;
+            text-align: left;
+        }
+
+        .wrap_h1 h1{ 
+            padding-left: 15px; 
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 30pt; 
+            color: rgb(68, 106, 173);
+        }
+
+        .wrap_ico{
+            /* background-color: green; */
+            width: 50%;
+            height: 100%;
+        }
+
+        .center{ 
+            /* background-color: red; */
+            margin-left: 25%; 
+            width: 50%;
+        }
+
+        .wrap_ico figure{ 
+            float: left;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            font-weight: 600;
+            color: rgb(191, 96, 13);
+        }
+
+        .wrap_ico figure:hover{ background-color: rgba(85, 170, 204, 0.7); } 
+
+        .wrap_ico img{ 
+            margin: 0 auto;
+            width: 130px; 
+            height: 130px;
+        }
+
+        .wrap_h2{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: rgb(68, 68, 68);
+            width: 30%;
+            height: 100%;
+            right: 0;
+        }
+
+        header h4{
+            color: rgb(68, 106, 173);
+            font-family: 'Trebuchet MS', sans-serif; 
+            position: absolute;
+            right: 3px;
+            margin-top: 150px;
+        }
+
+
+        /*------ MAIN ------*/
+
+
+        .container{
+            border-top: solid 5px grey;
+            padding-top: 15px;
+            height: 120vh;
+            width: 100%;
+            background-color: rgb(41, 49, 51);
+        }
+
+        /* inserire display: none; per container che non deve essere visualizzato inizialmente */
+
+        section{
+            position: relative;
+            height: 100%;
+            float: left;
+            overflow: auto;
+        }
+
+        .text{
+            width: 62%;
+            /* background-color: rgb(41, 49, 51);  #4a8058; /* #4a6c80; */
+        }
+        .img{
+            width: 38%;
+            /* background-color: yellow; */ 
+        }
+
+        .img p{ 
+            padding-top: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15pt;
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+            color: white; 
+        }
+
+        .wrapTop{
+            /* background-color: orange; */
+            width: 100%;
+            height: 90px;
+        }
+
+        .wrapTop h2{
+            margin-top: -40px;   
+            text-align: center;
+            color: white;
+            font-family: Ubuntu, sans-serif;
+            font-size: 25pt;
+        }
+
+        .wrapIcon{
+            /* background-color: green; */
+            width: 90px;
+            height: 90px;
+            top: 0;
+        }
+        .wrapIcon img{ padding: 2px 0 0 2px; width: 95%; height: 95%; }
+         
+        .dx{ right: 0; }
+
+        .wrapBt{   
+            position: absolute;
+            /* background-color: green; */
+            width: auto;
+            height: auto;
+            top: 5px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .bt{
+            width: 65px;
+            padding: 5px; 
+            margin-right: 5px; 
+            margin-left: 5px;
+            border: 3px solid gray;
+            border-radius: 14px;
+            font-weight: 600;
+        }
+        .bt:hover{ color: rgb(98, 164, 196); }
+
+        .wrapArticle{
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            /* background-color: pink; */
+        }
+
+        .mittente{
+            width: 90px;
+
+        }
+        .mittente p{ 
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14pt;
+            font-weight: bold;  
+            color: rgb(150, 150, 150);
+            padding-top: 12px;
+            text-align: center;
+            line-height: 22px;
+        }
+
+        .wrapMiddle{
+            margin-top: 15px;
+            position: absolute;
+            /* background-color: blue;  */
+            width: auto;
+            height: 100%;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            overflow-x: hidden;
+        }
+        .wrapMiddle h3{ 
+            color: rgb(255, 242, 100);     
+            font-family: Tahoma, sans-serif;
+            font-size: 17pt;
+            padding: 20px 0 5px 0;
+            text-indent: 40px;
+        }
+
+        article{            /* parentElement e' wrapMiddle */
+            padding: 10px;
+            width: 30vw;    /* vw = viewport-width */
+            background-color: transparent; /* #4a6c80; */
+            font-family: Verdana, sans-serif;
+            color: white;   
+            line-height: 30px;
+        }
+
+        article li{ list-style-type: none; }
+        article a{ color: rgb(98, 164, 196); font-size: 10pt; text-decoration: none; }
+
+        .wrapMiddle_IMG{
+            position: absolute;
+            /* background-color: blue;  */
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+        .wrapMiddle_IMG img{
+            width: 70vh;
+            height: 95vh;
+        }
+
+
+        /*------ FOOTER ------*/
+
+
+        footer{
+            border-top: solid 5px rgb(248, 248, 248); 
+            margin-top: 0;
+            width: 100%;
+            height: 160px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #4a6c80; 
+            }
+
+        .ruoli{
+            float: left;
+            width: 33vw;
+        }
+
+        .ruoli ul{
+            text-align: center;
+            list-style-type: none;
+            padding-bottom: 8px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15pt;            
+        }
+
+        .ruolo{ 
+            font-weight: bold; 
+            color: rgb(41, 49, 51);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17pt;
+        }
+
+
+        /*------ VALORI DEFAULT ------*/
+
+
+        #OT{ display: none; }
+        #GC{ display: block; }
+
+        .fronte{ display: block; }
+        .retro{ display: none; }
+
+        .bt_fronte{ border: 3px solid rgb(98, 164, 196); }
