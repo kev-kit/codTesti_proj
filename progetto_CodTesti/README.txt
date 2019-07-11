@@ -1,8 +1,6 @@
 
 --- Progetto esame Codifica di Testi a.a. 18/19 ---
 
-realizzato da Kevin Vanni, studente di Informatica Umanistica
-
 ver. 1.0
 
 BUG NOTI: 
