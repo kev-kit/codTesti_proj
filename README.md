@@ -7,7 +7,7 @@ L'interfaccia è visualizzabile all'indirizzo:
 https://htmlpreview.github.io/?https://github.com/kev-kit/codTesti_proj/blob/master/progetto_CodTesti/index.html
 >(potrebbe essere necessario ricaricare la pagina per visualizzare il contenuto correttamente)
 
-##Il Progetto
+## Il Progetto
 Il primo passo della digitalizzazione delle cartoline è stato fatta annotare il testo delle cartoline con lo standard di **codifica TEI**, Text Encoding Initiative (https://tei-c.org/).
 
 Una volta annotato il testo delle cartoline, i file **XML** e **XSL**, relativi all'annotazione delle cartoline e allo stile della pagina web da generare, sono stati trasformati con il processore **XSLT** nel file **HTML** della pagina web.
